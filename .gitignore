@@ -130,3 +130,6 @@ dmypy.json
 
 # Keras models
 *.h5
+
+# Log files
+logs/
