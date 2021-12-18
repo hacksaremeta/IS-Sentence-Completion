@@ -133,3 +133,6 @@ dmypy.json
 
 # Log files
 logs/
+
+# Datasets
+res/datasets/
