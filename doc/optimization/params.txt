@@ -1,0 +1,25 @@
+Datasets:
+- multiple
+
+# Network params
+train_embedding = True
+embed_vec_size = 250
+
+num_nodes_lstm = 1024
+num_nodes_dense = 2048
+
+# Training params
+num_batch = 128
+num_epochs = 150
+
+model_name = "changed-network-brain-<num_abstracts>-more-nodes"
+
+
+
+|                     	| Baseline Model 	| Best Dataset 200 	| More Nodes 20 	| More Nodes 2000 	| More Nodes 200 (lowercase) 	|
+|---------------------	|:--------------:	|:----------------:	|:-------------:	|:---------------:	|:--------------------------:	|
+| acc (max)           	|     23.33%     	|      35.46%      	|     71.72%    	|      75.93%     	|           62.67%           	|
+| loss (min)          	|      4.504     	|       2.978      	|     0.998     	|      0.942      	|            1.664           	|
+| val_acc (max)       	|     21.45%     	|      26.98%      	|     48.58%    	|      54.54%     	|           41.09%           	|
+| val_loss (min)      	|      5.553     	|       5.677      	|     5.037     	|      4.832      	|            5.019           	|
+| step (max val_loss) 	|       44       	|        92        	|       18      	|        18       	|             10             	|

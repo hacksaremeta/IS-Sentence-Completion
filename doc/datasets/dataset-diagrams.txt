@@ -1,0 +1,36 @@
+baseline: clustering[ti] algorithm 1000 (5.553 21.45)
+
+query: clustering[ti] algorithm
+- results: 4251
+- tested: 100, 200, 500, 1000, 1500, 2000 abstracts
+- best: 200 (5.677 26.98)
+
+query: covid-19
+- results: 211602
+- 200, 500, 2000 abstracts
+- best: 2000 (5.616 22.32)
+
+query: covid-19 vaccine
+- results: 15601
+- tested: 200, 500, 2000 abstracts
+- best: 2000 (5.402 22.31)
+
+query: brain surgery[Title/Abstract]
+- results: 2079
+- tested: 200, 500, 1000, 2000 abstracts
+- best: 2000 (5.504 25.78)
+
+query: ["brain surgery[Title/Abstract]", "clustering[ti] algorithm", "covid-19 vaccine"]
+name: dataset-multiple
+- tested: 3*70 = 210, 3*170 = 510, 333*3 = 999 abstracts
+- best: all significantly worse compared to single, individual queries
+
+
+Overall best model:
+- loss: covid-19 vaccine 2000 (5.402 22.31)
+- accuracy: clustering[ti] algorithm 200 (5.677 26.98)
+- middle ground: brain surgery[Title/Abstract] 2000 (5.504 25.78)
+
+changed network:
+clustering[ti] algorithm 200 (5.47 23.76)
+brain surgery[Title/Abstract] 2000 (5.451 23.91)
