@@ -1,0 +1,2 @@
+train 		- blue
+validation 	- red

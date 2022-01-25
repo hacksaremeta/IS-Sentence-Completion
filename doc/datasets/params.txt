@@ -1,0 +1,15 @@
+Datasets:
+- multiple
+
+# Network params
+train_embedding = True
+embed_vec_size = 200
+
+num_nodes_lstm = 128
+num_nodes_dense = 128
+
+# Training params
+num_batch = 2800
+num_epochs = 150
+
+model_name = "dataset-<query>"
