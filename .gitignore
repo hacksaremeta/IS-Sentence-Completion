@@ -128,9 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Keras models
-*.h5
-
 # Log files
 logs/
 
